@@ -1,0 +1,788 @@
+/*the standard css code */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+ /*here is the less variavles & mixins*/
+
+ @butunColor : #00a551;
+
+ .butonStyle() {
+ 			display: block;
+			width: 181px;
+			height: 61px;
+			-moz-border-radius: 0px;
+			-webkit-border-radius: 0px;
+			-moz-background-clip: padding;
+			-webkit-background-clip: padding-box;
+			background-color: rgba(0,0,0,0.8);
+			background-clip: padding-box;
+			border :2px solid rgba(0,0,0,0.2);	
+			color : @butunColor;
+			font-weight: 700;
+			padding: 6px 0 0 0;
+			line-height: 46px;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: center;
+			font-family: "Ropa Sans", sans-serif;
+			font-size: 30px;
+			    -webkit-trantition: background-color 0.2s ease-out;
+				-moz-transition: background-color 0.2s ease-out;
+                -o-transition: background-color 0.2s ease-out;
+  				transition: background-color 0.2s ease-out;
+  				cursor: pointer;
+			
+
+			
+ }
+
+
+ /*here is the keyframes*/
+
+
+
+ /*here is the main code*/
+
+.siderg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	background-color: #262626;
+	width: 214px;
+    height: auto;
+    h1 {
+		color: #fff;
+		font-family: "Nunito";
+		font-size: 17px;
+		margin-top: 40px;
+		margin-left: 21px;
+	}
+	p {
+		color: #cbcbcb;
+		font-family: "Open Sans";
+		font-size: 12px;
+	}
+    
+}
+
+.namof {
+	margin-left: 48px;
+}
+
+.maing {
+
+	width: 100%;
+    height: 100vh; 
+	
+}
+
+
+
+
+// photo de profile 
+
+.profiletof {
+
+	width: 100%;
+	height: 122px;
+	background-color:  #27272d; /* layer fill content */
+	position: relative;
+
+}
+
+.img-circle-bg {
+	display:block;
+	position: relative;
+	left:60px;
+	top: 66px;
+}
+
+.img-circle {
+		width: 75px;
+	    height: 75px;
+	    display:block;
+	    position: relative;
+	    bottom: 16px;
+	    left: 66px;
+	}
+
+
+	.icontag {
+		height: 50px;
+		position: absolute;
+		top: 27%;
+		img {
+			display: block;
+			margin-top: 30px;
+			margin-left: 57px;
+			-webkit-transition-duration: 0.8s;
+		    -moz-transition-duration: 0.8s;
+		    -o-transition-duration: 0.8s;
+		    transition-duration: 0.8s;
+		    -webkit-transition-property: -webkit-transform;
+		    -moz-transition-property: -moz-transform;
+		    -o-transition-property: -o-transform;
+		    transition-property: transform;
+		    overflow:hidden;
+		    &:hover {
+		    	-webkit-transform:rotate(360deg);
+				-moz-transform:rotate(360deg);
+				-o-transform:rotate(360deg);
+					}
+			}
+	}
+
+
+	.footerside {
+		position: absolute;
+		bottom:30px;
+		margin-top: 100%;
+		margin-left: 33px;
+		i {
+			margin-left: 10px;
+		}
+
+		p {
+			margin-top: 8%;
+			margin-left: 10px;
+		}
+	}
+
+	.mainin {
+		visibility: visible;
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom:0;
+
+		background: url(../../images/imagebc.png) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	}
+
+	.mainin2 {
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom:0;
+		padding-left: 18%;
+		background: url(../../images/bg2.png) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover; 
+		margin-right: 30px;
+
+		  
+	}
+
+
+	.mainin3 {
+		
+		position: absolute;
+		top: 0;
+		left: 140px;
+		right: 0;
+		bottom:0;
+		background: url(../../images/bg2.png) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover; 
+		margin-right: 30px;
+
+		  
+	}
+
+	.mainIcon {
+		width:99%;
+		padding-top: 14%;
+		padding-left: 20%;
+		img {
+			margin-left: 2%;
+		}
+	}
+
+	.mainFoto {
+		margin-left: 4%;
+	}
+
+	.boutonCode {
+		 
+		.butonStyle();
+		margin-left: 0%;
+		margin-top: 6%;
+		i {
+			transition: all 0.5s ease;
+			margin-left: 20px;
+		}
+		&:hover {
+				 text-decoration: none;
+				 color: @butunColor;
+				 i {
+				 	transition: all 0.5s ease;
+				 	margin-left: 40px;
+
+				 }
+		
+			}	
+	}
+
+	.boutonTutoriel {
+		.butonStyle();
+		margin-left: 5%;
+		margin-top: 7%;
+		i {
+			transition: all 0.5s ease;
+			padding-left: 5px;
+		}
+		&:hover {
+				 text-decoration: none;
+				 color: @butunColor;
+				 i {
+				 	transition: all 0.5s ease;
+				 	margin-left: 20px;
+
+				 }
+		
+			}
+	}
+
+	.boutonfoucha {
+		.butonStyle();
+		margin-left: 2%;
+		margin-top: 6%;
+		i {
+			transition: all 0.5s ease;
+			padding-left: 10px;
+		}
+
+		&:hover {
+				 text-decoration: none;
+				 color: @butunColor;
+				 i {
+				 	transition: all 0.5s ease;
+				 	margin-left: 20px;
+
+				 }
+		
+			}
+
+	}
+
+	.globalTitle {
+		text-align: center;
+		margin-top: 4%;
+		clear: both;
+		padding: 0 50px;
+		margin-right: 12%;
+		a {
+			&:hover {
+				text-decoration: none;
+				span {
+					color: @butunColor;
+					-webkit-trantition: color 2s ease-out;
+					-moz-transition: color 2s ease-out;
+                    -o-transition: color 2s ease-out;
+  					transition: color 2s ease-out;
+				}
+			}
+		}
+
+		h1 {
+			font-family: "Audiowide";
+			font-weight: bold;
+			font-size: 60px;
+			color : black;
+
+			span {
+				color: #b30031;
+				-webkit-trantition: color 2s ease-out;
+				-moz-transition: color 2s ease-out;
+                -o-transition: color 2s ease-out;
+  				transition: color 2s ease-out;
+				font-size: 70px;
+			}
+
+
+		}
+
+		h2 {
+			font-family: 'Indie Flower', cursive;
+			font-size: 30px;
+			letter-spacing: 10px;
+			color: #FFF;
+		}
+	}
+
+
+.size-48 {
+	font-size: 38px;
+	color : black;
+	transition: all 0.5s ease;
+	&:hover {
+		color: @butunColor;
+	}
+}
+
+.size-20 {
+	font-size: 22px;
+
+}
+
+/*scrollbar style */
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*main of the code page */
+
+	.codelogo {
+	    width: 150px;
+	    height: 150px;
+	    background: url(../../images/codings.svg);
+	    background-size: 150px 150px;
+	}
+
+	.desighnlogo {
+		width: 150px;
+	    height: 150px;
+	    background: url(../../images/website8.svg);
+	    background-size: 150px 150px;
+	}
+
+	.interactionlogo {
+		width: 150px;
+	    height: 150px;
+	    background: url(../../images/think3.svg);
+	    background-size: 150px 150px;
+	}
+
+	.vertligne {
+		width: 131px;
+		height: 4px;
+		background-color: #0f0;
+		margin-top: 10px;
+	}
+
+	
+
+	.letsTalk {
+		   display: block;
+		  -webkit-border-radius: 3;
+		  -moz-border-radius: 3;
+		  border-radius: 3px;
+		  font-family: "ropa sans";
+		  text-transform: uppercase;
+		  color: @butunColor;
+		  font-size: 2em;
+		  padding: 11px 40px 11px 40px;
+		  border: solid #000000 2px;
+		  text-decoration: none;
+		  letter-spacing: 2px;
+		  -webkit-trantition: background-color 0.8s ease-out;
+				-moz-transition: background-color 0.8s ease-out;
+                -o-transition: background-color 0.8s ease-out;
+  				transition: background-color 0.8s ease-out;
+
+		  &:hover {
+			  -webkit-border-radius: 3;
+			  -moz-border-radius: 3;
+			  border-radius: 3px;
+			  font-family: "ropa sans";
+			  color: #000;
+			  font-size: 2em;
+			  background: @butunColor;
+			  padding: 13px 42px 13px 42px;
+			  text-decoration: none;
+			  border: none;
+			  letter-spacing: 2px;
+			  -webkit-trantition: background-color 0.8s ease-out;
+				-moz-transition: background-color 0.8s ease-out;
+                -o-transition: background-color 0.8s ease-out;
+  				transition: background-color 0.8s ease-out;
+		  }
+
+	}
+
+	.talkGoBot {
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+/*blockquote*/
+
+.quotme {
+	margin-right: 4%;
+	margin-left: 0%;
+	h1 {
+		font-family: "audiowide";
+		font-size: 2em;
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-weight: bold;
+	}
+	h2 {
+		font-family: "ropa sans";
+		font-size: 2em;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-family: "open sans";
+  font-size: 2em;
+}
+
+/* model bar for let's talk */
+
+ .talkbanner {
+ 	width: 300%;
+ 	height: 300px;
+ 	background: url(../../images/bgcontact.jpg);
+ 	background-size: 100%;
+ 	margin: 0 auto;
+
+ 	a {
+ 		border: 2px solid rgba(255,255,255,0.8);
+ 		display: block;
+ 		color: white;
+ 		text-decoration: none;
+ 		padding: 0 0 0 20px;
+ 		background-color: transparent;
+ 		width: 80%;
+ 		height: 60px;
+ 		box-sizing: border-box;
+ 		line-height: 56px;
+ 		margin-top: 10px;
+ 		font-family: "ropa sans", sans-serif;
+
+ 		.padright {
+ 			padding-right: 20px;
+ 		}
+
+ 		i {
+ 			float: right;
+ 			padding-right: 10px;
+ 			color: @butunColor;
+ 			font-size: 40px;
+ 		}
+
+
+ 	}
+ }
+
+ .butonClose {
+ 		border: 2px solid rgba(255,255,255,0.8);
+ 		display: block;
+ 		color: @butunColor;
+ 		text-decoration: none;
+ 		padding: 0 0 0 20px;
+ 		background-color: transparent;
+ 		width: 80%;
+ 		height: 60px;
+ 		box-sizing: border-box;
+ 		line-height: 56px;
+ 		margin-top: 10px;
+ 		font-family: "ropa sans", sans-serif;
+ 		text-align: left !important;
+ 		font-size: 33px !important;
+ 		text-transform: uppercase;
+
+ 		i {
+ 			float: right;
+ 			padding-right: 13px;
+ 			color: white;
+ 			font-size: 40px;
+ 		}
+ }
+
+ .effeckt-modal {
+
+ 	&:before {
+ 		border-top: 10px solid #212121 !important;
+ 	}
+ 	
+ }
+
+ @media(max-width : 670px) {
+ 	.talkbanner {
+ 		width: 110%;
+ 		a {
+ 			i {
+ 				display:none;
+ 			}
+ 		}
+ 	}
+ }
+ 
+
+ /*portfolio section*/
+
+ .folioGoleft {
+ 	margin-right: 24%;
+ }
+
+#portfolio {
+	margin-right: 10% ;
+}
+
+.close-modal {
+	right: 72px !important;
+}
+
+
+ /* media query */
+
+ @media(max-width : 1500px) {
+ 	.quotme {
+ 		margin-right: -4%;
+ 	}
+ }
+
+
+
+ @media(max-width : 991px) {
+ 	.mainIcon {
+ 		margin-left: 157px;
+ 		img[src*=code] {
+ 			margin-left: 3%;
+ 		}
+ 	}
+
+ 	.mainFoto {
+
+ 	}
+
+ 	.globalTitle {
+ 		margin-right: 57%;
+ 	}
+
+ 	.boutonTutoriel {
+ 		margin-left: 2%;
+ 		
+ 	}
+
+ 	.boutonCode {
+ 		margin-left: 2%;
+ 	}
+
+ 	.col-md-4 {
+ 		padding-top: 16px;
+
+ 	}
+
+ 	.siderg {
+ 		width : 103px;
+ 		.footerside {
+ 			display : none;
+ 		}
+ 		.nameofme {
+ 			display: none;
+ 		}
+ 		.namof {
+ 			display: none;
+ 		}
+ 		.img-circle-bg {
+ 			left: 7px;
+ 			top: 16px;
+ 		}
+ 		.img-circle {
+ 			bottom: 66px;
+ 			left: 13px;
+ 		}
+ 		.icontag {
+ 			top: 103px;
+ 			left: -50px;
+ 		}
+ 	}
+
+}
+
+
+@media(max-width: 519px) {
+	.mainIcon {
+		margin-left: 7px !important;
+		img[src*=code] {
+ 			margin-left: 4%;
+ 		}
+	}
+}
+
+@media(max-width: 519px)  {
+	.quotme {
+		.letsTalk {
+			padding: 11px 12px;
+		}
+		margin-right: -30% !important;
+		margin-left: 40px !important;
+		p {
+			font-size: 20px;
+		}
+
+		h1 {
+			font-size: 1em;
+		}
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+
+	
+}
+
+@media (min-width: 1500px ) {
+
+	.mainin3 {
+		left: 213px !important;
+	}
+	
+}
+
+@media (max-width: 1482px) {
+	.mainin3 {
+		left: 142px !important;
+	}
+}
+
+@media (max-width: 966px) {
+	.mainin3 {
+		left: 81px !important;
+	}
+}
+
+@media (max-width: 1500px) {
+	.calToTheRight {
+		margin-left: 22.666667% !important;
+	}
+}
+
+@media (max-width: 991px ) {
+	.mainin3 {
+		left: 84px !important;
+	}	
+}
+
+@media (max-width: 519px) {
+	.mainin3 {
+		left: 0px !important;
+	}
+}
+
+
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
+	
