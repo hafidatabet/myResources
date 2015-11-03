@@ -5,7 +5,7 @@
 
 1.5 - optimisation numerique > 18 dec > 
 
-2   - network > 4 dec > 
+2   - network > 14 dec > 
 
 2   - TP network > 30 nov >
 
