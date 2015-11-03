@@ -1,4 +1,5 @@
-<!-- TC -->
+ TC 
+========================
 
 1.5 - math > A project to do 25/oc and 08/nov > 30 oct >
 
@@ -12,7 +13,8 @@
 
 2   - programmation systême > 
 
-<!-- PHF -->
+ PHF
+=================== 
 
 1.5 - intro au droit > 24 nov > 
 
@@ -24,7 +26,8 @@
 
 0.5 - proget pro >
 
-<!-- SI -->
+ SI 
+================== 
 
 2.5 - programmation web > 
 
