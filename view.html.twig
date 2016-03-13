@@ -1,0 +1,64 @@
+{# src/esiea/BlogBundle/Resources/view/Advert/view.html.twig #}
+
+{% extends "EsieaBlogBundle::layout.html.twig" %}
+
+{% block titre %}
+  Lecture d'une recette - {{ parent() }}
+{% endblock %}
+
+{% block esieablog_body %}
+
+  <h2>{{ advert.titre }}</h2>
+  <i1>Par {{ advert.auteur }}, le {{ advert.date|date('d/m/Y') }}</i1>
+
+
+  <div class="well">
+
+   <i2> Localisation : {{ advert.ingredients }} </i2>
+  </div>
+
+  <div class="well">
+
+   <i3> Déscription : {{ advert.preparation }} </i3>
+  </div>
+
+    
+    {% if file_exists("images/products/#{advert.titre}.pdf") %}
+    <a class="btn btn-success" href="{{asset("images/products/#{advert.titre}.pdf")}}" download>
+      <i class="glyphicon glyphicon-download"></i>
+      Telecharger votre document
+    </a>
+    {% else %}
+    <a class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-sm">
+      <i class="glyphicon glyphicon-download"></i>
+      Telecharger votre document
+    </a>
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <h2>Le fichié n'existe pas</h2>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    
+    <a ahref="/../../web"> <img src="lienpdf"></a>
+
+
+  <p>
+    <a href="{{ path('esiea_blog_home') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la liste des recettes
+    </a>
+    <a href="{{ path('esiea_blog_edit', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-edit"></i>
+      Modifier la recette
+    </a>
+    <a href="{{ path('esiea_blog_delete', {'id': advert.id}) }}" class="btn btn-danger">
+      <i class="glyphicon glyphicon-trash"></i>
+      Supprimer la recette
+    </a>
+  </p>
+
+{% endblock %}
